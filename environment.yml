@@ -1,0 +1,9 @@
+name: debug_env
+channels:
+  - defaults
+dependencies:
+  - streamlit
+  - pandas
+  - pillow
+  - tqdm
+  - s3fs
