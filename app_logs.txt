@@ -1,0 +1,382 @@
+
+[     UTC     ] Logs for conda-env-debug.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[11:01:03] 🖥 Provisioning machine...
+[11:01:03] 🎛 Preparing system...
+[11:01:03] ⛓ Spinning up manager process...
+[11:01:10] 🚀 Starting up repository: 'streamlit_debug', branch: 'main', main module: 'debug.py'
+[11:01:10] 🐙 Cloning repository...
+[11:01:11] 🐙 Cloning into '/mount/src/streamlit_debug'...
+
+[11:01:11] 🐙 Cloned repository!
+[11:01:11] 🐙 Pulling code changes from Github...
+[11:01:12] 📦 Processing dependencies...
+Collecting package metadata (repodata.json): ...working... [2023-09-07 11:01:25.082886] done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.12.0
+  latest version: 23.7.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+Downloading and Extracting Packages
+toml-0.10.2          | 20 KB     |            |   0% [2023-09-07 11:01:42.165768] toml-0.10.2          | 20 KB     | ########   |  81% [2023-09-07 11:01:42.182023] toml-0.10.2          | 20 KB     | ########## | 100% [2023-09-07 11:01:42.182526] 
+multidict-6.0.2      | 49 KB     |            |   0% [2023-09-07 11:01:42.241287] multidict-6.0.2      | 49 KB     | ########## | 100% [2023-09-07 11:01:42.241738] 
+platformdirs-3.10.0  | 33 KB     |            |   0% [2023-09-07 11:01:42.285116] platformdirs-3.10.0  | 33 KB     | ########## | 100% [2023-09-07 11:01:42.285570] 
+frozenlist-1.3.3     | 45 KB     |            |   0% [2023-09-07 11:01:42.322844] frozenlist-1.3.3     | 45 KB     | ########## | 100% [2023-09-07 11:01:42.323132] 
+abseil-cpp-20211102. | 1020 KB   |            |   0% [2023-09-07 11:01:42.504126] abseil-cpp-20211102. | 1020 KB   | ########## | 100% [2023-09-07 11:01:42.504414] abseil-cpp-20211102. | 1020 KB   | ########## | 100% [2023-09-07 11:01:42.504702] 
+aiobotocore-2.5.0    | 116 KB    |            |   0% [2023-09-07 11:01:42.550206] aiobotocore-2.5.0    | 116 KB    | ########## | 100% [2023-09-07 11:01:42.550498] 
+c-ares-1.19.1        | 118 KB    |            |   0% [2023-09-07 11:01:42.597292] c-ares-1.19.1        | 118 KB    | ########## | 100% [2023-09-07 11:01:42.597589] 
+libprotobuf-3.20.3   | 2.4 MB    |            |   0% [2023-09-07 11:01:42.690401] libprotobuf-3.20.3   | 2.4 MB    | ########## | 100% [2023-09-07 11:01:42.690698] 
+Verifying transaction: ...working... [2023-09-07 11:02:10.953208] done
+Executing transaction: ...working... [2023-09-07 11:02:17.298164] done
+#
+# To activate this environment, use
+#
+#     $ conda activate base
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[11:02:35] 🐍 Python dependencies were installed from /mount/src/streamlit_debug/environment.yml using conda.
+Check if streamlit is installed
+
+──────────────────────────────── Installing Streamlit ──────────────────────────────────
+
+Collecting streamlit
+  Downloading streamlit-1.26.0-py2.py3-none-any.whl (8.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 100.0 MB/s eta 0:00:00[2023-09-07 11:02:36.869476] 
+Collecting gitpython!=3.1.19,<4,>=3.0.7
+  Downloading GitPython-3.1.34-py3-none-any.whl (188 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.6/188.6 KB 212.9 MB/s eta 0:00:00[2023-09-07 11:02:36.983418] 
+Collecting python-dateutil<3,>=2.7.3
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 211.7 MB/s eta 0:00:00[2023-09-07 11:02:37.028201] 
+Collecting tornado<7,>=6.0.3
+  Downloading tornado-6.3.3-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.7/427.7 KB 137.9 MB/s eta 0:00:00[2023-09-07 11:02:37.127402] 
+Collecting typing-extensions<5,>=4.1.0
+  Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Collecting cachetools<6,>=4.0
+  Downloading cachetools-5.3.1-py3-none-any.whl (9.3 kB)
+Collecting pillow<10,>=7.1.0
+  Downloading Pillow-9.5.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 271.4 MB/s eta 0:00:00[2023-09-07 11:02:37.794014] 
+Collecting importlib-metadata<7,>=1.4
+  Downloading importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
+Collecting requests<3,>=2.18
+  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 KB 111.2 MB/s eta 0:00:00[2023-09-07 11:02:38.017055] 
+Collecting pandas<3,>=1.3.0
+  Downloading pandas-2.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 231.9 MB/s eta 0:00:00[2023-09-07 11:02:38.530400] 
+Collecting protobuf<5,>=3.20
+  Downloading protobuf-4.24.2-cp37-abi3-manylinux2014_x86_64.whl (311 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 311.4/311.4 KB 142.5 MB/s eta 0:00:00[2023-09-07 11:02:39.309298] 
+Collecting altair<6,>=4.0
+  Downloading altair-5.1.1-py3-none-any.whl (520 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 520.6/520.6 KB 148.8 MB/s eta 0:00:00[2023-09-07 11:02:39.376453] 
+Collecting tenacity<9,>=8.1.0
+  Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Collecting pyarrow>=6.0
+  Downloading pyarrow-13.0.0-cp39-cp39-manylinux_2_28_x86_64.whl (40.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 MB 141.0 MB/s eta 0:00:00
+Collecting packaging<24,>=16.8
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 KB 126.8 MB/s eta 0:00:00[2023-09-07 11:02:40.074520] 
+Collecting numpy<2,>=1.19.3
+  Downloading numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 38.3 MB/s eta 0:00:00[2023-09-07 11:02:40.933394] 
+Collecting click<9,>=7.0
+  Downloading click-8.1.7-py3-none-any.whl (97 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 KB 117.4 MB/s eta 0:00:00[2023-09-07 11:02:41.057404] 
+Collecting pympler<2,>=0.9
+  Downloading Pympler-1.0.1-py3-none-any.whl (164 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.8/164.8 KB 130.8 MB/s eta 0:00:00[2023-09-07 11:02:41.107862] 
+Collecting rich<14,>=10.14.0
+  Downloading rich-13.5.2-py3-none-any.whl (239 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.7/239.7 KB 215.9 MB/s eta 0:00:00[2023-09-07 11:02:41.261317] 
+Collecting toml<2,>=0.10.1
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting watchdog>=2.1.5
+  Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl (82 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 KB 140.4 MB/s eta 0:00:00[2023-09-07 11:02:41.478886] 
+Collecting validators<1,>=0.2
+  Downloading validators-0.22.0-py3-none-any.whl (26 kB)
+Collecting blinker<2,>=1.0.0
+  Downloading blinker-1.6.2-py3-none-any.whl (13 kB)
+Collecting tzlocal<5,>=1.1
+  Downloading tzlocal-4.3.1-py3-none-any.whl (20 kB)
+Collecting pydeck<1,>=0.8
+  Downloading pydeck-0.8.0-py2.py3-none-any.whl (4.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 128.6 MB/s eta 0:00:00[2023-09-07 11:02:41.764383] 
+Collecting jsonschema>=3.0
+  Downloading jsonschema-4.19.0-py3-none-any.whl (83 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.4/83.4 KB 105.6 MB/s eta 0:00:00[2023-09-07 11:02:41.937706] 
+Collecting toolz
+  Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 113.5 MB/s eta 0:00:00[2023-09-07 11:02:41.987178] 
+Collecting jinja2
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 240.5 MB/s eta 0:00:00[2023-09-07 11:02:42.054936] 
+Collecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 KB 135.1 MB/s eta 0:00:00[2023-09-07 11:02:42.117096] 
+Collecting zipp>=0.5
+  Downloading zipp-3.16.2-py3-none-any.whl (7.2 kB)
+Collecting pytz>=2020.1
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 KB 106.5 MB/s eta 0:00:00[2023-09-07 11:02:42.522638] 
+Collecting tzdata>=2022.1
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 KB 151.2 MB/s eta 0:00:00[2023-09-07 11:02:42.581462] 
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.3/158.3 KB 142.3 MB/s eta 0:00:00[2023-09-07 11:02:42.812309] 
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.9/123.9 KB 132.5 MB/s eta 0:00:00[2023-09-07 11:02:42.936834] 
+Collecting idna<4,>=2.5
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 126.7 MB/s eta 0:00:00[2023-09-07 11:02:42.994204] 
+Collecting charset-normalizer<4,>=2
+  Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (202 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 KB 144.8 MB/s eta 0:00:00[2023-09-07 11:02:43.153890] 
+Collecting markdown-it-py>=2.2.0
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 KB 118.8 MB/s eta 0:00:00[2023-09-07 11:02:43.225246] 
+Collecting pygments<3.0.0,>=2.13.0
+  Downloading Pygments-2.16.1-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 152.7 MB/s eta 0:00:00[2023-09-07 11:02:43.316627] 
+Collecting pytz-deprecation-shim
+  Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
+Collecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.10.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 142.2 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl (17 kB)
+Collecting attrs>=22.2.0
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 165.3 MB/s eta 0:00:00[2023-09-07 11:02:44.216589] 
+Collecting referencing>=0.28.4
+  Downloading referencing-0.30.2-py3-none-any.whl (25 kB)
+Collecting mdurl~=0.1
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pytz, zipp, watchdog, validators, urllib3, tzdata, typing-extensions, tornado, toolz, toml, tenacity, smmap, six, rpds-py, pympler, pygments, protobuf, pillow, packaging, numpy, mdurl, MarkupSafe, idna, click, charset-normalizer, certifi, cachetools, blinker, attrs, requests, referencing, pytz-deprecation-shim, python-dateutil, pyarrow, markdown-it-py, jinja2, importlib-metadata, gitdb, tzlocal, rich, pydeck, pandas, jsonschema-specifications, gitpython, jsonschema, altair, streamlit
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2022.7
+    Uninstalling pytz-2022.7:
+      Successfully uninstalled pytz-2022.7
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.11.0
+    Uninstalling zipp-3.11.0:
+      Successfully uninstalled zipp-3.11.0
+  Attempting uninstall: watchdog
+    Found existing installation: watchdog 2.1.6
+    Uninstalling watchdog-2.1.6:
+      Successfully uninstalled watchdog-2.1.6
+  Attempting uninstall: validators
+    Found existing installation: validators 0.18.2
+    Uninstalling validators-0.18.2:
+      Successfully uninstalled validators-0.18.2
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.26.16
+    Uninstalling urllib3-1.26.16:
+      Successfully uninstalled urllib3-1.26.16
+  Attempting uninstall: tzdata
+    Found existing installation: tzdata 2023.3
+    Uninstalling tzdata-2023.3:
+      Successfully uninstalled tzdata-2023.3
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.7.1
+    Uninstalling typing_extensions-4.7.1:
+      Successfully uninstalled typing_extensions-4.7.1
+  Attempting uninstall: tornado
+    Found existing installation: tornado 6.3.2
+    Uninstalling tornado-6.3.2:
+      Successfully uninstalled tornado-6.3.2
+  Attempting uninstall: toolz
+    Found existing installation: toolz 0.12.0
+    Uninstalling toolz-0.12.0:
+      Successfully uninstalled toolz-0.12.0
+  Attempting uninstall: toml
+    Found existing installation: toml 0.10.2
+    Uninstalling toml-0.10.2:
+      Successfully uninstalled toml-0.10.2
+  Attempting uninstall: tenacity
+    Found existing installation: tenacity 8.2.2
+    Uninstalling tenacity-8.2.2:
+      Successfully uninstalled tenacity-8.2.2
+  Attempting uninstall: smmap
+    Found existing installation: smmap 4.0.0
+    Uninstalling smmap-4.0.0:
+      Successfully uninstalled smmap-4.0.0
+  Attempting uninstall: six
+    Found existing installation: six 1.16.0
+    Uninstalling six-1.16.0:
+      Successfully uninstalled six-1.16.0
+  Attempting uninstall: pympler
+    Found existing installation: Pympler 0.9
+    Uninstalling Pympler-0.9:
+      Successfully uninstalled Pympler-0.9
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.15.1
+    Uninstalling Pygments-2.15.1:
+      Successfully uninstalled Pygments-2.15.1
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 3.20.3
+    Uninstalling protobuf-3.20.3:
+      Successfully uninstalled protobuf-3.20.3
+  Attempting uninstall: pillow
+    Found existing installation: Pillow 9.4.0
+    Uninstalling Pillow-9.4.0:
+      Successfully uninstalled Pillow-9.4.0
+  Attempting uninstall: packaging
+    Found existing installation: packaging 23.1
+    Uninstalling packaging-23.1:
+      Successfully uninstalled packaging-23.1
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.25.2
+    Uninstalling numpy-1.25.2:
+      Successfully uninstalled numpy-1.25.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.0
+    Uninstalling mdurl-0.1.0:
+      Successfully uninstalled mdurl-0.1.0
+  Attempting uninstall: MarkupSafe
+    Found existing installation: MarkupSafe 2.1.1
+    Uninstalling MarkupSafe-2.1.1:
+      Successfully uninstalled MarkupSafe-2.1.1
+  Attempting uninstall: idna
+    Found existing installation: idna 3.4
+    Uninstalling idna-3.4:
+      Successfully uninstalled idna-3.4
+  Attempting uninstall: click
+    Found existing installation: click 8.0.4
+    Uninstalling click-8.0.4:
+      Successfully uninstalled click-8.0.4
+  Attempting uninstall: charset-normalizer
+    Found existing installation: charset-normalizer 2.0.4
+    Uninstalling charset-normalizer-2.0.4:
+      Successfully uninstalled charset-normalizer-2.0.4
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2023.7.22
+    Uninstalling certifi-2023.7.22:
+      Successfully uninstalled certifi-2023.7.22
+  Attempting uninstall: cachetools
+    Found existing installation: cachetools 4.2.2
+    Uninstalling cachetools-4.2.2:
+      Successfully uninstalled cachetools-4.2.2
+  Attempting uninstall: blinker
+    Found existing installation: blinker 1.4
+    Uninstalling blinker-1.4:
+      Successfully uninstalled blinker-1.4
+  Attempting uninstall: attrs
+    Found existing installation: attrs 22.1.0
+    Uninstalling attrs-22.1.0:
+      Successfully uninstalled attrs-22.1.0
+  Attempting uninstall: requests
+    Found existing installation: requests 2.31.0
+    Uninstalling requests-2.31.0:
+      Successfully uninstalled requests-2.31.0
+  Attempting uninstall: python-dateutil
+    Found existing installation: python-dateutil 2.8.2
+    Uninstalling python-dateutil-2.8.2:
+      Successfully uninstalled python-dateutil-2.8.2
+  Attempting uninstall: pyarrow
+    Found existing installation: pyarrow 11.0.0
+    Uninstalling pyarrow-11.0.0:
+      Successfully uninstalled pyarrow-11.0.0
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 2.2.0
+    Uninstalling markdown-it-py-2.2.0:
+      Successfully uninstalled markdown-it-py-2.2.0
+  Attempting uninstall: jinja2
+    Found existing installation: Jinja2 3.1.2
+    Uninstalling Jinja2-3.1.2:
+      Successfully uninstalled Jinja2-3.1.2
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 6.0.0
+    Uninstalling importlib-metadata-6.0.0:
+      Successfully uninstalled importlib-metadata-6.0.0
+  Attempting uninstall: gitdb
+    Found existing installation: gitdb 4.0.7
+    Uninstalling gitdb-4.0.7:
+      Successfully uninstalled gitdb-4.0.7
+  Attempting uninstall: tzlocal
+    Found existing installation: tzlocal 2.1
+    Uninstalling tzlocal-2.1:
+      Successfully uninstalled tzlocal-2.1
+  Attempting uninstall: rich
+    Found existing installation: rich 13.3.5
+    Uninstalling rich-13.3.5:
+      Successfully uninstalled rich-13.3.5
+  Attempting uninstall: pydeck
+    Found existing installation: pydeck 0.7.1
+    Uninstalling pydeck-0.7.1:
+      Successfully uninstalled pydeck-0.7.1
+  Attempting uninstall: pandas
+    Found existing installation: pandas 2.0.3
+    Uninstalling pandas-2.0.3:
+      Successfully uninstalled pandas-2.0.3
+  Attempting uninstall: gitpython
+    Found existing installation: GitPython 3.1.30
+    Uninstalling GitPython-3.1.30:
+      Successfully uninstalled GitPython-3.1.30
+  Attempting uninstall: jsonschema
+    Found existing installation: jsonschema 4.17.3
+    Uninstalling jsonschema-4.17.3:
+      Successfully uninstalled jsonschema-4.17.3
+  Attempting uninstall: altair
+    Found existing installation: altair 5.0.1
+    Uninstalling altair-5.0.1:
+      Successfully uninstalled altair-5.0.1
+  Attempting uninstall: streamlit
+    Found existing installation: streamlit 1.24.1
+    Uninstalling streamlit-1.24.1:
+      Successfully uninstalled streamlit-1.24.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+botocore 1.29.76 requires urllib3<1.27,>=1.25.4, but you have urllib3 2.0.4 which is incompatible.
+aiohttp 3.8.3 requires charset-normalizer<3.0,>=2.0, but you have charset-normalizer 3.2.0 which is incompatible.
+Successfully installed MarkupSafe-2.1.3 altair-5.1.1 attrs-23.1.0 blinker-1.6.2 cachetools-5.3.1 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 gitdb-4.0.10 gitpython-3.1.34 idna-3.4 importlib-metadata-6.8.0 jinja2-3.1.2 jsonschema-4.19.0 jsonschema-specifications-2023.7.1 markdown-it-py-3.0.0 mdurl-0.1.2 numpy-1.25.2 packaging-23.1 pandas-2.1.0 pillow-9.5.0 protobuf-4.24.2 pyarrow-13.0.0 pydeck-0.8.0 pygments-2.16.1 pympler-1.0.1 python-dateutil-2.8.2 pytz-2023.3.post1 pytz-deprecation-shim-0.1.0.post0 referencing-0.30.2 requests-2.31.0 rich-13.5.2 rpds-py-0.10.2 six-1.16.0 smmap-5.0.0 streamlit-1.26.0 tenacity-8.2.3 toml-0.10.2 toolz-0.12.0 tornado-6.3.3 typing-extensions-4.7.1 tzdata-2023.3 tzlocal-4.3.1 urllib3-2.0.4 validators-0.22.0 watchdog-3.0.0 zipp-3.16.2
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[11:03:10] 📦 Processed dependencies!
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+
+
+2023-09-07 11:03:29.312 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/adminuser/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+  File "/mount/src/streamlit_debug/debug.py", line 1, in <module>
+    import s3fs
+  File "/home/adminuser/venv/lib/python3.9/site-packages/s3fs/__init__.py", line 1, in <module>
+    from .core import S3FileSystem, S3File
+  File "/home/adminuser/venv/lib/python3.9/site-packages/s3fs/core.py", line 29, in <module>
+    import aiobotocore.session
+  File "/home/adminuser/venv/lib/python3.9/site-packages/aiobotocore/session.py", line 1, in <module>
+    from botocore import UNSIGNED, translate
+  File "/home/adminuser/venv/lib/python3.9/site-packages/botocore/translate.py", line 16, in <module>
+    from botocore.utils import merge_dicts
+  File "/home/adminuser/venv/lib/python3.9/site-packages/botocore/utils.py", line 37, in <module>
+    import botocore.httpsession
+  File "/home/adminuser/venv/lib/python3.9/site-packages/botocore/httpsession.py", line 22, in <module>
+    from urllib3.util.ssl_ import (
+ImportError: cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' (/home/adminuser/venv/lib/python3.9/site-packages/urllib3/util/ssl_.py)
